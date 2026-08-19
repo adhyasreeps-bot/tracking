@@ -16,7 +16,7 @@
 import axios from "axios";
 
 // ── Constants ─────────────────────────────────────────────────────────────
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://tracking-1-zmxu.onrender.com";
 const ACCESS_TOKEN_KEY = "access_token";
 const REFRESH_TOKEN_KEY = "refresh_token";
 
